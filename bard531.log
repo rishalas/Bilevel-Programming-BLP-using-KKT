@@ -1,0 +1,84 @@
+
+--- Job bard531.gms Start 10/29/25 12:30:14 38.2.1 96226ea8 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\38\gmsprmNT.txt
+    C:\Users\sinergi\OneDrive\Documents\GAMS\gamsconfig.yaml
+--- GAMS Parameters defined
+    Input C:\Users\sinergi\OneDrive\Documents\GAMS\Studio\workspace\Bilv\bard531.gms
+    PageSize 0
+    ScrDir C:\Users\sinergi\OneDrive\Documents\GAMS\Studio\workspace\Bilv\225a\
+    SysDir C:\GAMS\38\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Tarmizi Taher, S.Si, Single User License       S220218|0002AO-WIN
+          Sumatra Institute of Technology, Upt Lab Terpadu          DC16101
+          C:\Users\sinergi\OneDrive\Documents\GAMS\gamslice.txt
+          upt.labterpadu@itera.ac.id                                       
+Processor information: 1 socket(s), 12 core(s), and 24 thread(s) available
+GAMS 38.2.1   Copyright (C) 1987-2022 GAMS Development. All rights reserved
+--- Starting compilation
+--- bard531.gms(47) 2 Mb
+--- Starting execution: elapsed 0:00:00.010
+--- bard531.gms(44) 3 Mb
+--- Generating MINLP model KKTmodel
+--- bard531.gms(45) 5 Mb
+---   10 rows  12 columns  43 non-zeroes
+---   33 nl-code  14 nl-non-zeroes
+--- bard531.gms(45) 3 Mb
+--- Executing BARON (Solvelink=2): elapsed 0:00:00.016
+
+GAMS/BARON       38.2.1 96226ea8 Feb 19, 2022          WEI x86 64bit/MS Window
+
+*** This solver runs with a community license.
+===========================================================================
+ BARON version 22.2.3. Built: WIN-64 Thu Feb 3 18:42:34 EST 2022 
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC, ILOG CPLEX                             
+ For NLP: MINOS, SNOPT, External NLP, IPOPT, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value -58.0000000000     
+ Solving bounding LP
+ Problem solved during preprocessing
+ Lower bound is -58.0000000000     
+
+ Calculating duals
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.16
+ Total CPU time used:                 0.11
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+
+Solution      = -58  best solution found during preprocessing
+Best possible = -58
+Absolute gap  = 0  optca = 1E-9
+Relative gap  = 0  optcr = 0.0001
+  (Note that BARON uses a different formula to compute the relative gap as
+   was used for the above reported value.)
+
+--- Reading solution for model KKTmodel
+--- Executing after solve: elapsed 0:00:00.277
+--- bard531.gms(47) 3 Mb
+*** Status: Normal completion
+--- Job bard531.gms Stop 10/29/25 12:30:14 elapsed 0:00:00.278
